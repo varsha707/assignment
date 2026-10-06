@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <!--  College Registration Form Create a registration form containing Name, Roll Number, Email, Password, Gender, Course
+    dropdown, Date of Birth, Address, and Submit/Reset buttons. Use CSS to make the form properly aligned and visually
+    attractive. -->
+<form>
+    <div class="top">ENTER YOUR DETAILS</div>
+    <label for="Name">NAME - </label>
+    <input type="Name" id="Name" placeholder="ENTER YOUR NAME">
+    <label for="Roll Number">Roll number - </label>
+    <input type="text" id="Roll Number" placeholder="ENTER ROLL NUMBER">
+    <label for="Email">Personal Email ID - </label>
+    <input type="text" id="Email" placeholder="ENTER EMAIL ID">
+    <label for="gender">Gender - </label>
+    <select id="gender" name="gender">
+        <option value=" disabled selection">Select gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">other</option>
+    </select>
+     <label for="course">Enter course : </label>
+    <input list="course" id="course" name="course" placeholder=" type or Select course">
+    <datalist id="course">
+        <option value="CS/CSE"></option>
+        <option value="IT"></option>
+        <option value="ECE"></option>
+        <option value="Mechanical"></option>
+        <option value="Civil"></option>
+        <option value="EEE"></option>
+        <option value="CSE-AI/AIML"></option>
+    
+    </datalist>
+    <label for="dob">Date of birth</label>
+    <input type="date" id="dob" placeholder="Enter Date of birth">
+    
+    <label for="Address">Address</label>
+    <input type="text" id="Address" placeholder="Enter Address">
+    <div><button>Submit</button>
+        <button>Reset</button>
+        </div>
+
+
+
+
+</form>
+</body>
+</html>

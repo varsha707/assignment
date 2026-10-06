@@ -1,0 +1,80 @@
+  form {
+      background-color: azure;
+      color: darkslategrey;
+      max-height: 600px;
+      border: 2px solid rgb(17, 55, 55);
+     margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+  }
+
+  form label {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      max-width: 300px;
+      margin-left: 20%;
+      font-size: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  input,
+  select {
+      background-color: aqua;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      max-width: 300px;
+      margin-left: 15%;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .top {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 25px;
+      text-decoration: underline;
+
+  }
+
+  button {
+      background-color: darkkhaki;
+      margin: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.1s ease;
+  }
+
+  button:hover {
+      background-color: chartreuse;
+      transform: translateY(-2px);
+  }
+  @media screen and (max-width: 480px) {
+    form {
+        width: 95%;
+        margin: 10px auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .top {
+        font-size: 20px;
+    }
+
+    form label {
+        font-size: 16px;
+    }
+
+    input, select {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
